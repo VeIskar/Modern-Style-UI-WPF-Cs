@@ -20,5 +20,5 @@ namespace UI_Mod.Core
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
         }
-    }
+    } 
 }

@@ -6,8 +6,41 @@
         xmlns:local="clr-namespace:UI_Mod"
         mc:Ignorable="d"
         
-        Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Height="600" 
+        Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="False"
+        >
+
+
+    <Border Background="#061525"
+            CornerRadius="30">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                
+                <RowDefinition Height="70"/>
+                <RowDefinition/>
+                
+            </Grid.RowDefinitions>
+
+            <Image Source="/Images/temp_logo1.png"
+                   Width="80"
+                   Height="80"
+                   Margin="15,5,0,0"
+                   HorizontalAlignment="Left"/>
+             
+
+
+        </Grid>
+
+    </Border>
 </Window>
