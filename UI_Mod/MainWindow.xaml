@@ -36,8 +36,18 @@
                    Width="80"
                    Height="80"
                    Margin="15,5,0,0"
-                   HorizontalAlignment="Left"/>
-             
+                   HorizontalAlignment="Left"
+            />
+
+            <StackPanel Grid.Row="1">
+
+                <RadioButton Content="Main"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="15"
+                    />
+
+            </StackPanel>
 
 
         </Grid>
