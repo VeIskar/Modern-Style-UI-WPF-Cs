@@ -45,6 +45,7 @@
                              Height="50"
                              Foreground="White"
                              FontSize="15"
+                             Style="{StaticResource MenuButton}"
                     />
 
             </StackPanel>
