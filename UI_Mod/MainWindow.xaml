@@ -48,7 +48,30 @@
                              Style="{StaticResource MenuButton}"
                     />
 
+                <RadioButton Content="Browse"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="15"
+                             Style="{StaticResource MenuButton}"
+                    />
+
+                <RadioButton Content="News"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="15"
+                             Style="{StaticResource MenuButton}"
+                    />
+                
+
             </StackPanel>
+
+            <TextBox Width="250"
+                     Height="45"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="5"
+                     Grid.Column="1"
+                     Style="{StaticResource ModernTextTheme}"/>
 
 
         </Grid>
