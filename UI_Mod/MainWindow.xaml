@@ -41,7 +41,7 @@
 
             <StackPanel Grid.Row="1">
 
-                <RadioButton Content="Main"
+                <RadioButton Content="Overview"
                              Height="50"
                              Foreground="White"
                              FontSize="15"
@@ -72,6 +72,11 @@
                      Margin="5"
                      Grid.Column="1"
                      Style="{StaticResource ModernTextTheme}"/>
+
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"/>
 
 
         </Grid>
