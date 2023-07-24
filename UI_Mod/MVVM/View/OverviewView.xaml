@@ -41,10 +41,48 @@
                                    FontSize="18"
                                    Margin="20,10,10,0"/>
                     </StackPanel>
+                    
+                    
+                    
                 </Grid>
 
 
             </Border>
+
+            <Border Width="200"
+                    Height="225"
+                    CornerRadius="10" 
+                    Margin="50,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="1,2">
+                        <GradientStop Color="#ffc543" Offset="0.0"/>
+                        <GradientStop Color="#ffb75a" Offset="1"/>
+
+                    </LinearGradientBrush>
+                </Border.Background>
+                
+
+            </Border>
+
+
+        </StackPanel>
+
+        <StackPanel>
+
+            <TextBlock Text="Highest rated"
+                   Foreground="White"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Border Width="125" Height="125"
+                        Background="Aquamarine"
+                        CornerRadius="10"/>
+
+            </StackPanel>
 
         </StackPanel>
 
