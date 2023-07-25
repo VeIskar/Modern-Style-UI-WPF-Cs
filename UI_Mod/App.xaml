@@ -2,6 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:UI_Mod"
+             xmlns:viewModel="clr-namespace:UI_Mod.MVVM.ViewModel"
+             xmlns:view="clr-namespace:UI_Mod.MVVM.View"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
@@ -12,6 +14,13 @@
                 <ResourceDictionary Source="Theme/TextBoxThemeDict.xaml"/>
                 
             </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:OverViewModel}">
+                
+                <view:OverviewView/>
+
+            </DataTemplate>
+            
         </ResourceDictionary>
 
     </Application.Resources>

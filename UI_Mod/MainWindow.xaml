@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI_Mod"
+        xmlns:viewModel="clr-namespace:UI_Mod.MVVM.ViewModel"
         mc:Ignorable="d"
         
         Height="600" 
@@ -13,6 +14,10 @@
         Background="Transparent"
         AllowsTransparency="False"
         >
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
 
 
     <Border Background="#061525"
@@ -76,7 +81,8 @@
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10"/>
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
 
 
         </Grid>
