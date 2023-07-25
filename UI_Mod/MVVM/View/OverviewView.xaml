@@ -71,6 +71,15 @@
 
         <StackPanel>
 
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+
+                    <Setter Property="Margin"
+                            Value="19,0,0,0"/>
+
+                </Style>
+            </StackPanel.Resources>
+
             <TextBlock Text="Highest rated"
                    Foreground="White"
                    FontSize="20"
@@ -80,6 +89,23 @@
             <StackPanel Orientation="Horizontal">
                 <Border Width="125" Height="125"
                         Background="Aquamarine"
+                        CornerRadius="10"
+                        Margin="0"/>
+
+                <Border Width="125" Height="125"
+                        Background="#4e99fa"
+                        CornerRadius="10"/>
+
+                <Border Width="125" Height="125"
+                        Background="LightSeaGreen"
+                        CornerRadius="10"/>
+
+                <Border Width="125" Height="125"
+                        Background="#ecff4e"
+                        CornerRadius="10"/>
+
+                <Border Width="125" Height="125"
+                        Background="#bfff99"
                         CornerRadius="10"/>
 
             </StackPanel>
