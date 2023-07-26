@@ -16,14 +16,16 @@ namespace UI_Mod.MVVM.ViewModel
         public object CurrentView
         {
             get { return _currentView; }
-            set { _currentView = value; OnPropertyChanged(); }
+            set {_currentView = value; 
+                OnPropertyChanged(); 
+            }
         }
 
         public MainViewModel()
         {
             Over_V_M = new OverViewModel();
             CurrentView = Over_V_M;
-                
+
         }
     }
 }

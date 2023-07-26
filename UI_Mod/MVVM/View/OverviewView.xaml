@@ -41,9 +41,13 @@
                                    FontSize="18"
                                    Margin="20,10,10,0"/>
                     </StackPanel>
-                    
-                    
-                    
+
+                    <Image
+                           Height="250"
+                           Source="/Images/Businessman1.png" Margin="252,-11,-29,-13"/>
+
+
+
                 </Grid>
 
 
@@ -52,7 +56,7 @@
             <Border Width="200"
                     Height="225"
                     CornerRadius="10" 
-                    Margin="50,0,0,0">
+                    Margin="30,0,0,0">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0"
@@ -62,7 +66,7 @@
 
                     </LinearGradientBrush>
                 </Border.Background>
-                
+
 
             </Border>
 
@@ -75,7 +79,7 @@
                 <Style TargetType="{x:Type Border}">
 
                     <Setter Property="Margin"
-                            Value="19,0,0,0"/>
+                            Value="13,0,0,0"/>
 
                 </Style>
             </StackPanel.Resources>
