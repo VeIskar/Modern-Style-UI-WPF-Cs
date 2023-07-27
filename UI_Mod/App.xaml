@@ -20,7 +20,13 @@
                 <view:OverviewView/>
 
             </DataTemplate>
-            
+
+            <DataTemplate DataType="{x:Type viewModel:BrowseViewModel}">
+
+                <view:BrowseView/>
+
+            </DataTemplate>
+
         </ResourceDictionary>
 
     </Application.Resources>

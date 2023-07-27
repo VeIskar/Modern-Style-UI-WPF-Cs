@@ -52,6 +52,8 @@
                              Foreground="White"
                              FontSize="15"
                              Style="{StaticResource MenuButton}"
+                             IsChecked="True"
+                             Command="{Binding OverViewCommand}"
                     />
 
                 <RadioButton Content="Browse"
@@ -59,6 +61,7 @@
                              Foreground="White"
                              FontSize="15"
                              Style="{StaticResource MenuButton}"
+                             Command="{Binding BrowseViewCommand}"
                     />
 
                 <RadioButton Content="News"
