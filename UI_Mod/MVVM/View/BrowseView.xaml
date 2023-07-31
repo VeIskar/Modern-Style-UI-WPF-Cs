@@ -17,43 +17,86 @@
 
         <StackPanel Orientation="Horizontal" Margin="0,-10,0,10">
 
-            <Border Width="330"
+            <Border Width="315"
                     Height="180"
                     Margin="40,0,0,40">
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0"
-                                         EndPoint="1,2">
-                        <GradientStop Color="Cyan" Offset="0.0"/>
-                        <GradientStop Color="DarkBlue" Offset="0.5"/>
 
-                    </LinearGradientBrush>
-                    
-                </Border.Background>
+                <Grid>
+                    <Rectangle>
+
+                        <Rectangle.Fill>
+
+                            <LinearGradientBrush StartPoint="0,0" 
+                                                 EndPoint="1,2">
+                                
+                                <GradientStop Color="Cyan" Offset="0.0"/>
+                                <GradientStop Color="DarkBlue" Offset="0.5"/>
+
+                            </LinearGradientBrush>
+
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Image Source="/Images/innov.png" 
+                           Stretch="Fill" 
+                           Opacity="0.2"/>
+
+                    <TextBlock Text="Innovation"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="28"
+                                   Margin="10,10,10,10"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Right"
+                                   VerticalAlignment="Bottom"/>
+
+
+                </Grid>
 
                 <Border.Clip>
                     <RectangleGeometry RadiusX="20" RadiusY="20"
-                                       Rect="0,0,330,180"/>
+                                       Rect="0,0,315,180"/>
                 </Border.Clip>
 
-                <Grid/>
-                
             </Border>
 
-            <Border Width="330"
+            <Border Width="315"
                     Height="180"
                     CornerRadius="20" 
-                    Margin="70,0,0,40">
+                    Margin="20,0,0,40">
 
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0"
+                <Grid>
+                    <Rectangle>
+
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,1">
-                        <GradientStop Color="Crimson" Offset="0.0"/>
-                        <GradientStop Color="DarkOrange" Offset="0.5"/>
-                        <GradientStop Color="#fab52a" Offset="1"/>
+                                <GradientStop Color="Crimson" Offset="0.0"/>
+                                <GradientStop Color="DarkOrange" Offset="0.5"/>
+                                <GradientStop Color="#fab52a" Offset="1"/>
 
-                    </LinearGradientBrush>
-                </Border.Background>
+                            </LinearGradientBrush>
 
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Image Source="/Images/scien.png"
+                           Stretch="Fill"
+                           Opacity="0.3"/>
+
+                    <TextBlock Text="Science"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="28"
+                                   Margin="10,10,10,10"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Right"
+                                   VerticalAlignment="Bottom"/>
+
+                </Grid>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20" RadiusY="20"
+                                       Rect="0,0,315,180"/>
+                </Border.Clip>
 
             </Border>
 
@@ -61,45 +104,89 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0,-40,0,0">
-            <Border Width="330"
+            <Border Width="315"
                     Height="180"
                     CornerRadius="20" 
                     Margin="40,10,0,40"
                     >
-                <Border.Background>
+                <Grid>
+                    <Rectangle>
+                        <Rectangle.Fill>
 
-                    <LinearGradientBrush StartPoint="0,0"
+                            <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,1">
-                        <GradientStop Color="DarkGreen" Offset="0.0"/>
-                        <GradientStop Color="#03a106" Offset="0.5"/>
-                        <GradientStop Color="Lime" Offset="1"/>
+                                <GradientStop Color="DarkGreen" Offset="0.0"/>
+                                <GradientStop Color="#03a106" Offset="0.5"/>
+                                <GradientStop Color="Lime" Offset="1"/>
 
-                    </LinearGradientBrush>
-                                      
-                    
-                </Border.Background>
+                            </LinearGradientBrush>
+
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Image Source="/Images/natur.png"
+                           Stretch="UniformToFill"
+                           Opacity="0.25"/>
+
+                    <TextBlock Text="Environment"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="28"
+                                   Margin="10,10,10,10"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Right"
+                                   VerticalAlignment="Bottom"/>
+
+                </Grid>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20" RadiusY="20"
+                                       Rect="0,0,315,180"/>
+                </Border.Clip>
 
             </Border>
 
-            <Border Width="330"
+            <Border Width="315"
                     Height="180"
                     CornerRadius="20" 
-                    Margin="70,0,0,40">
+                    Margin="20,0,0,30">
 
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0"
+                <Grid>
+                    <Rectangle>
+                        <Rectangle.Fill>
+
+                            <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,1">
-                        <GradientStop Color="#241545" Offset="0.0"/>
-                        <GradientStop Color="#3d139c" Offset="0.5"/>
-                        <GradientStop Color="Fuchsia" Offset="1"/>
+                                <GradientStop Color="#241545" Offset="0.0"/>
+                                <GradientStop Color="#3d139c" Offset="0.5"/>
+                                <GradientStop Color="Fuchsia" Offset="1"/>
 
-                    </LinearGradientBrush>
-                </Border.Background>
+                            </LinearGradientBrush>
 
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Image Source="/Images/fina.png"
+                           Stretch="UniformToFill"
+                           Opacity="0.25"/>
+
+                    <TextBlock Text="Finance"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="28"
+                                   Margin="10,10,10,10"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Right"
+                                   VerticalAlignment="Bottom"/>
+
+                </Grid>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20" RadiusY="20"
+                                       Rect="0,0,315,180"/>
+                </Border.Clip>
+                
 
             </Border>
         </StackPanel>
         
-
     </StackPanel>
 </UserControl>
