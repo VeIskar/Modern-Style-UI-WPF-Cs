@@ -12,6 +12,7 @@
 
                             <TextBlock Text="{TemplateBinding Property=Content}"
                                        VerticalAlignment="Center"
+                                       FontFamily="/Fonts/#Righteous"
                                        Margin="50,0,0,0"/>
 
                         </Grid>

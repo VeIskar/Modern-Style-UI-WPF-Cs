@@ -35,10 +35,12 @@
                         <TextBlock Text="Fastest growing industry&#x0a;on global scale"
                                    Foreground="AntiqueWhite"
                                    FontSize="28"
+                                   FontWeight="Medium"
                                    Margin="20,10,10,0"/>
-                        <TextBlock Text="Fastest growing industry&#x0a;on global scale"
+                        <TextBlock Text="Learn basics of finances&#x0a;and economy "
                                    Foreground="AntiqueWhite"
                                    FontSize="18"
+                                   FontFamily="/Fonts/#Comme"
                                    Margin="20,10,10,0"/>
                     </StackPanel>
 
