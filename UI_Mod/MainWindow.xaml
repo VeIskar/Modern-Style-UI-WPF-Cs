@@ -69,6 +69,7 @@
                              Foreground="White"
                              FontSize="15"
                              Style="{StaticResource MenuButton}"
+                             Command="{Binding NewsViewCommand}"
                     />
                 
 

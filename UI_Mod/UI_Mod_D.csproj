@@ -73,6 +73,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\NewsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\OverviewView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -89,9 +93,13 @@
   <ItemGroup>
     <Compile Include="MVVM\ViewModel\BrowseViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\NewsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OverViewModel.cs" />
     <Compile Include="MVVM\View\BrowseView.xaml.cs">
       <DependentUpon>BrowseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\NewsView.xaml.cs">
+      <DependentUpon>NewsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\OverviewView.xaml.cs">
       <DependentUpon>OverviewView.xaml</DependentUpon>
