@@ -39,5 +39,10 @@ namespace UI_Mod.MVVM.View
         {
             ClockTxt.Text=DateTime.Now.ToString("G");
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

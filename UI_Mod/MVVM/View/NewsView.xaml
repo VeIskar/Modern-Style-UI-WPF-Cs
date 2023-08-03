@@ -7,24 +7,53 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              >
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"
+    <StackPanel>
+
+
+        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right"
                 VerticalAlignment="Top" Margin="10">
 
-        <TextBlock Text="Current Datetime: "
+            <TextBlock Text="Current Datetime: "
                        FontSize="18"
                        FontFamily="/Fonts/#Righteous"
                        Foreground="WhiteSmoke"
                        Margin="0,0,10,0"/>
-        
-        
-        <TextBlock x:Name="ClockTxt"
+
+
+            <TextBlock x:Name="ClockTxt"
                    FontSize="18"
                    FontFamily="/Fonts/#Righteous"
                    Foreground="WhiteSmoke"/>
-        
-       
+
+
+        </StackPanel>
+        <StackPanel Margin="20">
+
+            <Grid>
+                
+                
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Content="Left" Margin="5,5,5,5" Grid.RowSpan="2" Click="Button_Click" />
+                <Image Grid.Column="1" Source="/Images/polit.png" Height="323" Width="668" Stretch="UniformToFill" Margin="5" />
+                <Button Grid.Column="2" Content="Left" Margin="5,5,5,5" Grid.RowSpan="2" />
+
+
+            </Grid>
+
+
+        </StackPanel>
+
+
+
 
     </StackPanel>
-    
-    
+
+
 </UserControl>
