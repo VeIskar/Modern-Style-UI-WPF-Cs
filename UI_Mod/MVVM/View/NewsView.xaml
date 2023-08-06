@@ -27,11 +27,11 @@
 
 
         </StackPanel>
-        <StackPanel Margin="20" Height="300" >
+        <StackPanel Margin="20" Height="290" >
 
             <Grid>
-                
-                
+
+
                 <Grid.ColumnDefinitions>
 
                     <ColumnDefinition Width="40" />
@@ -41,7 +41,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Button Grid.Column="0" Content="Left" Margin="5,5,5,5" Click="Button_Click" />
-                <Image x:Name="imgSlide" Grid.Column="1"  Height="323" Width="580" Stretch="UniformToFill" Margin="5" />
+                <Image x:Name="imgSlide" Grid.Column="1"  Height="290" Width="580" Stretch="UniformToFill" Margin="5" />
                 <Button Grid.Column="2" Content="Right" Margin="5,5,5,5" Click="Button_Click_1" />
 
 
@@ -50,8 +50,144 @@
 
         </StackPanel>
 
-       
+        <StackPanel Height="78">
 
+            <TextBlock Text="Tags"
+                   FontFamily="/Fonts/#Righteous"
+                   Foreground="White"
+                   FontSize="14"
+                   HorizontalAlignment="Left"
+                   Margin="25,0,0,5"/>
+
+            <StackPanel Orientation="Horizontal" Height="123">
+
+                <Border Width="80" Height="34"
+                        Background="Crimson"
+                        CornerRadius="10"
+                        Margin="15,0,0,80">
+
+                    <Label>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                            <AccessText Text="Politics" 
+                                 FontSize="12"
+                                 Foreground="White"
+                                 FontFamily="/Fonts/#Comme"
+                                 Margin="5">
+
+                            </AccessText>
+                        </StackPanel>
+                    </Label>
+
+                </Border>
+
+                <Border Width="80" Height="34"
+                        Background="Crimson"
+                        CornerRadius="10"
+                        Margin="15,0,0,80">
+
+                    <Label>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                            <AccessText Text="Nature" 
+                                 FontSize="12"
+                                 Foreground="White"
+                                 FontFamily="/Fonts/#Comme"
+                                 Margin="5">
+
+                            </AccessText>
+                        </StackPanel>
+                    </Label>
+
+                </Border>
+
+                <Border Width="90" Height="34"
+                        Background="Crimson"
+                        CornerRadius="10"
+                        Margin="15,0,0,80">
+
+                    <Label>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                            <AccessText Text="Industry" 
+                                 FontSize="12"
+                                 Foreground="White"
+                                 FontFamily="/Fonts/#Comme"
+                                 Margin="5">
+
+                            </AccessText>
+                        </StackPanel>
+                    </Label>
+
+                </Border>
+
+                <Border Width="110" Height="34"
+                        Background="Crimson"
+                        CornerRadius="10"
+                        Margin="15,0,0,80">
+
+                    <Label>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                            <AccessText Text="Data analysis" 
+                                 FontSize="12"
+                                 Foreground="White"
+                                 FontFamily="/Fonts/#Comme"
+                                 Margin="5">
+
+                            </AccessText>
+                        </StackPanel>
+                    </Label>
+
+                </Border>
+
+                <Border Width="140" Height="34"
+                        Background="Crimson"
+                        CornerRadius="10"
+                        Margin="15,0,0,80">
+
+                    <Label>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                            <AccessText Text="Around the world" 
+                                 FontSize="12"
+                                 Foreground="White"
+                                 FontFamily="/Fonts/#Comme"
+                                 Margin="5">
+
+                            </AccessText>
+                        </StackPanel>
+                    </Label>
+
+                </Border>
+
+                <Border Width="90" Height="34"
+                        Background="Crimson"
+                        CornerRadius="10"
+                        Margin="15,0,0,80">
+
+                    <Label>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                            <AccessText Text="Business" 
+                                 FontSize="12"
+                                 Foreground="White"
+                                 FontFamily="/Fonts/#Comme"
+                                 Margin="5">
+
+                            </AccessText>
+                        </StackPanel>
+                    </Label>
+
+                </Border>
+            </StackPanel>
+        </StackPanel>
 
 
 
