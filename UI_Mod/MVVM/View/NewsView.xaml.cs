@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using UI_Mod.MVVM.ViewModel;
 
 namespace UI_Mod.MVVM.View
 {
@@ -31,7 +32,9 @@ namespace UI_Mod.MVVM.View
         {
             InitializeComponent();
 
-            timer= new DispatcherTimer();
+            DataContext = new NewsViewModel();
+
+            timer = new DispatcherTimer();
             timer.Interval=TimeSpan.FromSeconds(1);
             timer.Tick+= Timer_Tick;
             timer.Start();

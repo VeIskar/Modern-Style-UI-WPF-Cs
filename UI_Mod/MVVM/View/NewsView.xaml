@@ -59,9 +59,46 @@
                    HorizontalAlignment="Left"
                    Margin="25,0,0,5"/>
 
-            <StackPanel Orientation="Horizontal" Height="123">
+            <ItemsControl ItemsSource="{Binding Tags}">
+                
+                <ItemsControl.ItemsPanel>
+                    
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                    
+                </ItemsControl.ItemsPanel>
+                
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="Auto" Height="34"
+                                Background="Crimson"
+                                CornerRadius="10"
+                                Margin="5">
+                            
+                            <Label>
+                                
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image Source="/Images/close_.png" Height="16" Width="16"/>
+                                    <AccessText Text="{Binding}"                                               
+                                                FontSize="12"
+                                                Foreground="White"
+                                                FontFamily="/Fonts/#Comme"
+                                                Margin="5">
+                                        
+                                    </AccessText>
+                                </StackPanel>
+                            </Label>
+                            
+                        </Border>
+                        
+                    </DataTemplate>
+                    
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
 
-                <Border Width="80" Height="34"
+            <!-- Old hardcoding of tags
+            <Border Width="80" Height="34"
                         Background="Crimson"
                         CornerRadius="10"
                         Margin="15,0,0,80">
@@ -81,112 +118,10 @@
                     </Label>
 
                 </Border>
-
-                <Border Width="80" Height="34"
-                        Background="Crimson"
-                        CornerRadius="10"
-                        Margin="15,0,0,80">
-
-                    <Label>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
-                            <AccessText Text="Nature" 
-                                 FontSize="12"
-                                 Foreground="White"
-                                 FontFamily="/Fonts/#Comme"
-                                 Margin="5">
-
-                            </AccessText>
-                        </StackPanel>
-                    </Label>
-
-                </Border>
-
-                <Border Width="90" Height="34"
-                        Background="Crimson"
-                        CornerRadius="10"
-                        Margin="15,0,0,80">
-
-                    <Label>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
-                            <AccessText Text="Industry" 
-                                 FontSize="12"
-                                 Foreground="White"
-                                 FontFamily="/Fonts/#Comme"
-                                 Margin="5">
-
-                            </AccessText>
-                        </StackPanel>
-                    </Label>
-
-                </Border>
-
-                <Border Width="110" Height="34"
-                        Background="Crimson"
-                        CornerRadius="10"
-                        Margin="15,0,0,80">
-
-                    <Label>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
-                            <AccessText Text="Data analysis" 
-                                 FontSize="12"
-                                 Foreground="White"
-                                 FontFamily="/Fonts/#Comme"
-                                 Margin="5">
-
-                            </AccessText>
-                        </StackPanel>
-                    </Label>
-
-                </Border>
-
-                <Border Width="140" Height="34"
-                        Background="Crimson"
-                        CornerRadius="10"
-                        Margin="15,0,0,80">
-
-                    <Label>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
-                            <AccessText Text="Around the world" 
-                                 FontSize="12"
-                                 Foreground="White"
-                                 FontFamily="/Fonts/#Comme"
-                                 Margin="5">
-
-                            </AccessText>
-                        </StackPanel>
-                    </Label>
-
-                </Border>
-
-                <Border Width="90" Height="34"
-                        Background="Crimson"
-                        CornerRadius="10"
-                        Margin="15,0,0,80">
-
-                    <Label>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="/Images/close_.png" Height="16" Width="16"/>
-                            <AccessText Text="Business" 
-                                 FontSize="12"
-                                 Foreground="White"
-                                 FontFamily="/Fonts/#Comme"
-                                 Margin="5">
-
-                            </AccessText>
-                        </StackPanel>
-                    </Label>
-
-                </Border>
-            </StackPanel>
+                    ...
+                </Border>-->
+                
+            
         </StackPanel>
 
 
