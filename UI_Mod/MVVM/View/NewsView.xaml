@@ -40,14 +40,56 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Column="0" Content="Left" Margin="5,5,5,5" Click="Button_Click" />
-                <Image x:Name="imgSlide" Grid.Column="1"  Height="290" Width="580" Stretch="UniformToFill" Margin="5" />
-                <Button Grid.Column="2" Content="Right" Margin="5,5,5,5" Click="Button_Click_1" />
+                <Button Grid.Column="0" Margin="5,5,5,5" 
+                        Click="Button_Click"
+                        Width="auto" Height="110"
+                        BorderThickness="0"
+                        Background="Transparent">
+
+                    <Button.Content>
+
+                        <Image Source="/Images/lr_but.png">
+                            <Image.LayoutTransform>
+                                <RotateTransform Angle="180"/>
+                            </Image.LayoutTransform>
+                        </Image>
+                        
+                    </Button.Content>
+                </Button>
+
+                <Canvas Grid.Column="1" Height="290" Width="570">
+
+                    <Image x:Name="imgSlide" Height="290" Width="570" Stretch="Fill" Margin="5"/>
+                    
+                    <TextBlock x:Name="SlideDescription"
+                               VerticalAlignment="Bottom"
+                               HorizontalAlignment="Right"
+                               Text=""
+                               FontFamily="/Fonts/#Comme"
+                               Foreground="WhiteSmoke"
+                               FontSize="22"
+                               Margin="5"
+                               />
+                    
+                </Canvas>
+
+                <Button Grid.Column="2" Margin="5,5,5,5" 
+                        Click="Button_Click_1" 
+                        Width="auto" Height="110"
+                        BorderThickness="0"
+                        Background="Transparent">
+
+                    <Button.Content>
+                        <Image Source="/Images/lr_but.png"/>
+                    </Button.Content>
+                </Button>
+
+                
 
 
             </Grid>
-
-
+            
+            
         </StackPanel>
 
         <StackPanel Height="78">
@@ -96,6 +138,8 @@
                     
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+
+            
 
             <!-- Old hardcoding of tags
             <Border Width="80" Height="34"

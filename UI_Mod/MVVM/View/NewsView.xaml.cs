@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using UI_Mod.Core;
 using UI_Mod.MVVM.ViewModel;
 
 namespace UI_Mod.MVVM.View
@@ -22,9 +24,15 @@ namespace UI_Mod.MVVM.View
     /// </summary>
     public partial class NewsView : UserControl
     {
-
         private int index = 0;
         SliderImage slideImgs = new SliderImage();
+
+        private List<string> slideDescriptions = new List<string>
+        {
+            "Largest defense system tender in europe", "Greenhouse gas emissions. What are the factories solutions?",
+            "Explore nature: the quietest place in Europe","Learn about the positive impact of group work"
+
+        };
 
         private DispatcherTimer timer;
 
@@ -41,14 +49,24 @@ namespace UI_Mod.MVVM.View
 
             slideImgs.AddImage("polit.png");
             slideImgs.AddImage("factory.png");
+            slideImgs.AddImage("forest.png");
+            slideImgs.AddImage("roomBus.png");
 
             imgSlide.Source = new BitmapImage(new Uri(slideImgs.imagesList[0], UriKind.Relative ) );
+
+            UpdateSlideDesc();
 
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
             ClockTxt.Text=DateTime.Now.ToString("G");
+        }
+
+        //descriptions under all of the images during slide show
+        private void UpdateSlideDesc()
+        {
+            SlideDescription.Text = slideDescriptions[index];
         }
 
 
@@ -61,6 +79,7 @@ namespace UI_Mod.MVVM.View
 
                 index -= 1;
                 imgSlide.Source = new BitmapImage(new Uri(slideImgs.imagesList[index], UriKind.Relative));
+                UpdateSlideDesc();
 
             }
 
@@ -75,6 +94,7 @@ namespace UI_Mod.MVVM.View
 
                 index += 1;
                 imgSlide.Source = new BitmapImage(new Uri(slideImgs.imagesList[index], UriKind.Relative));
+                UpdateSlideDesc();
 
             }
 
@@ -91,7 +111,6 @@ namespace UI_Mod.MVVM.View
             imagesList = new List<string>();
         }
 
-        //<Image Grid.Column="1" Source="/Images/polit.png" Height="323" Width="580" Stretch="UniformToFill" Margin="5" />
         public void AddImage(string imgName)
         {
             urlPath = "/Images/"+imgName;
