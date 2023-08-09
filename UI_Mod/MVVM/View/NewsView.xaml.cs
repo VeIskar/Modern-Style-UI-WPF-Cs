@@ -29,7 +29,7 @@ namespace UI_Mod.MVVM.View
 
         private List<string> slideDescriptions = new List<string>
         {
-            "Largest defense system tender in europe", "Greenhouse gas emissions. What are the factories solutions?",
+            "Largest defense system tender in europe", "Greenhouse gas emissions.\nWhat are the factories solutions?",
             "Explore nature: the quietest place in Europe","Learn about the positive impact of group work"
 
         };

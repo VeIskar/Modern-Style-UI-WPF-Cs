@@ -22,6 +22,7 @@ namespace UI_Mod.MVVM.ViewModel
             Tags.Add("Data analysis");
             Tags.Add("Around the world");
             Tags.Add("Business");
+            Tags.Add($"Trend");
 
         }
 

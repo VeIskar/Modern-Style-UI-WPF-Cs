@@ -26,17 +26,17 @@
             CornerRadius="30">
         <Grid>
             <Grid.ColumnDefinitions>
-                
+
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
 
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                
+
                 <RowDefinition Height="70"/>
                 <RowDefinition/>
-                
+
             </Grid.RowDefinitions>
 
             <Image Source="/Images/temp_logo1.png"
@@ -73,7 +73,7 @@
                              Style="{StaticResource MenuButton}"
                              Command="{Binding NewsViewCommand}"
                     />
-                
+
 
             </StackPanel>
 
@@ -91,7 +91,32 @@
                             Margin="10"
                             Content="{Binding CurrentView}"/>
 
-            
+            <Button Grid.Column="1"
+                    x:Name="MinimizeBtn"
+                    Background="#b0b0a9"
+                    Content="➖"
+                    Cursor="Hand"
+                    Foreground="AntiqueWhite"
+                    HorizontalAlignment="Left" 
+                    Margin="646,10,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="25" Height="25" 
+                    Click="MinimizeBtn_Click"/>
+
+            <Button Grid.Column="1"
+                    x:Name="CloseBtn"
+                    Background="Crimson"
+                    Content="✖️"
+                    Cursor="Hand"
+                    Foreground="AntiqueWhite"
+                    HorizontalAlignment="Left" 
+                    Margin="676,10,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="25" Height="25" Click="CloseBtn_Click" 
+                    />
+
+
+
 
 
         </Grid>
