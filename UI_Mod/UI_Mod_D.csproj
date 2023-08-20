@@ -123,6 +123,8 @@
     </EmbeddedResource>
     <Resource Include="Fonts\Righteous-Regular.ttf" />
     <Resource Include="Fonts\Comme-VariableFont_wght.ttf" />
+    <Resource Include="Fonts\Exo2-Italic-VariableFont_wght.ttf" />
+    <Resource Include="Fonts\Play-Bold.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

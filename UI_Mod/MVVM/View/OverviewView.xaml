@@ -19,8 +19,8 @@
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,2">
-                        <GradientStop Color="DeepSkyBlue" Offset="0.0"/>
-                        <GradientStop Color="DodgerBlue" Offset="1"/>
+                        <GradientStop Color="#2ec1ac" Offset="0.0"/>
+                        <GradientStop Color="#5C65C1" Offset="1"/>
 
                     </LinearGradientBrush>
                 </Border.Background>
@@ -55,7 +55,7 @@
 
             </Border>
 
-            <Border Width="200"
+            <Border Width="210"
                     Height="225"
                     CornerRadius="10" 
                     Margin="30,0,0,0">
@@ -63,8 +63,8 @@
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,2">
-                        <GradientStop Color="#ffc543" Offset="0.0"/>
-                        <GradientStop Color="#ffb75a" Offset="1"/>
+                        <GradientStop Color="#f9f9f9" Offset="0.0"/>
+                        <GradientStop Color="#FF523717" Offset="1"/>
 
                     </LinearGradientBrush>
                 </Border.Background>
@@ -86,32 +86,142 @@
                 </Style>
             </StackPanel.Resources>
 
-            <TextBlock Text="Highest rated"
+            <TextBlock Text="Recommended for you"
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"
                    Margin="0,0,0,10"/>
 
             <StackPanel Orientation="Horizontal">
-                <Border Width="125" Height="125"
-                        Background="Aquamarine"
+                <Border Width="155" Height="125"
+                        Background="#304865"
                         CornerRadius="10"
-                        Margin="0"/>
+                        Margin="0">
+                    <Grid>
+                        <TextBlock Text="Company Co."
+                                   Foreground="AntiqueWhite"
+                                   FontFamily="/Fonts/#Play"
+                                   FontSize="13"
+                                   FontWeight="Medium"
+                                   Margin="7"/>
+
+                        <Canvas Width="130"
+                                Height="90"
+                                Margin="0,10,0,-5">
+
+                            <Rectangle Width="130" Height="74" Fill="DarkGray" Opacity="0.5" 
+                                       HorizontalAlignment="Center" 
+                                       Canvas.Top="16" 
+                                       VerticalAlignment="Top"/>
+                            
+                            <Line X1="130" Y1="90" X2="0" Y2="17"
+                                  Stroke="#ff5349" StrokeThickness="2"/>
+
+                            <TextBlock Text="-0.03%" FontSize="8.5" Foreground="#ff5349"
+                                       Canvas.Left="104" Canvas.Top="0"/>
+                            <TextBlock Text="52 441,62" FontSize="8.5" FontWeight="Bold" 
+                                       Foreground="AntiqueWhite"
+                                       Canvas.Left="0" Canvas.Top="0"/>
+
+                        </Canvas>
+
+                    </Grid>
+
+                </Border>
 
                 <Border Width="125" Height="125"
-                        Background="#4e99fa"
-                        CornerRadius="10"/>
+                        Background="#4e587d"
+                        CornerRadius="10">
+                    <Grid>
+
+                        <Border Background="#FFFF"
+                                Height="105"
+                                Width="92"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                CornerRadius="20"
+                                Opacity="0.3"
+                                Margin="23,0,0,0"/>
+
+                        <TextBlock                            
+                            Text=" BEST &#x0a; STOCK&#x0a; TO INVEST"
+                            Foreground="AntiqueWhite"
+                            FontFamily="/Fonts/#Pla/"
+                            FontSize="16"
+                            FontWeight="DemiBold"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Right"
+                            Margin="0,20,15,0" 
+                            LineHeight="20"/>
+
+                    </Grid>
+
+
+                </Border>
 
                 <Border Width="125" Height="125"
-                        Background="LightSeaGreen"
-                        CornerRadius="10"/>
+                        Background="#706792"
+                        CornerRadius="10">
+
+                    <Grid>
+
+                        <Border Background="#FFFF"
+                                Height="105"
+                                Width="92"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                CornerRadius="20"
+                                Opacity="0.3"
+                                Margin="23,0,0,0"/>
+
+                        <TextBlock                            
+                            Text="NEW&#x0a;DISCOVERY&#x0a;IN MATH&#x0a;"
+                            Foreground="AntiqueWhite"
+                            FontFamily="/Fonts/#Exo2"
+                            FontSize="16"
+                            FontWeight="Medium"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Margin="26,0,0,0" 
+                            Height="82"
+                            LineHeight="21"
+                            />
+
+                    </Grid>
+
+                </Border>
 
                 <Border Width="125" Height="125"
-                        Background="#ecff4e"
-                        CornerRadius="10"/>
+                        Background="#633b47"
+                        CornerRadius="10">
+                    <Grid>
 
-                <Border Width="125" Height="125"
-                        Background="#bfff99"
+                        <Border Background="#FFFF"
+                                Height="105"
+                                Width="92"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                CornerRadius="20"
+                                Opacity="0.3"
+                                Margin="23,0,0,0"/>
+
+                        <TextBlock                            
+                            Text=" RECORD&#x0a; APPLE&#x0a; PRICE OF&#x0a; $190K"
+                            Foreground="AntiqueWhite"
+                            FontFamily="/Fonts/#Exo2"
+                            FontSize="16"
+                            FontWeight="Medium"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Margin="26,0,0,0"
+                            LineHeight="21"
+                            />
+                    </Grid>
+
+                </Border>
+
+                <Border Width="108" Height="125"
+                        Background="#976b78"
                         CornerRadius="10"/>
 
             </StackPanel>
