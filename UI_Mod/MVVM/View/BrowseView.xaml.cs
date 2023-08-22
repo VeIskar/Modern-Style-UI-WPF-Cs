@@ -24,5 +24,20 @@ namespace UI_Mod.MVVM.View
         {
             InitializeComponent();
         }
+
+        private void Inno_clikc(object sender, EventArgs e)
+        {
+            if (innov_txt.Visibility==Visibility.Collapsed)
+            {
+                innov_txt.Visibility = Visibility.Visible;
+                innov_title.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                innov_txt.Visibility = Visibility.Collapsed;
+                innov_title.Visibility = Visibility.Visible;
+            }
+        }
+
     }
 }

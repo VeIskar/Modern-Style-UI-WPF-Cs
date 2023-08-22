@@ -136,9 +136,9 @@
                             <Line X1="130" Y1="90" X2="0" Y2="17"
                                   Stroke="#ff5349" StrokeThickness="2"/>
 
-                            <TextBlock Text="-0.03%" FontSize="8.5" Foreground="#ff5349"
+                            <TextBlock Text="-0.03%" FontSize="10" Foreground="#ff5349"
                                        Canvas.Left="104" Canvas.Top="0"/>
-                            <TextBlock Text="52 441,62" FontSize="8.5" FontWeight="Bold" 
+                            <TextBlock Text="52 441,62" FontSize="10" FontWeight="Bold" 
                                        Foreground="AntiqueWhite"
                                        Canvas.Left="0" Canvas.Top="0"/>
 
@@ -194,7 +194,7 @@
                                 Margin="23,0,0,0"/>
 
                         <TextBlock                            
-                            Text="NEW&#x0a;DISCOVERY&#x0a;IN MATH&#x0a;"
+                            Text=" NEW&#x0a; DISCOVERY&#x0a; IN MATH&#x0a;"
                             Foreground="AntiqueWhite"
                             FontFamily="/Fonts/#Exo2"
                             FontSize="16"
