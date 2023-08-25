@@ -41,9 +41,9 @@
                            Stretch="Fill" 
                            Opacity="0.2"
                            MouseLeftButtonDown="Inno_clikc"/>
-
+                  
                     <TextBlock x:Name="innov_txt" 
-                               Text="Lorem Ipsum Lorem ipsum"
+                               Text="{Binding }"
                                Foreground="AntiqueWhite"
                                FontSize="14"
                                Margin="10"
