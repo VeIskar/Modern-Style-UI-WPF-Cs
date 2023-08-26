@@ -21,7 +21,7 @@
                     Height="180"
                     Margin="40,0,0,40">
 
-                <Grid>
+                <Grid x:Name="grid_Ino">
                     <Rectangle>
 
                         <Rectangle.Fill>
@@ -41,12 +41,21 @@
                            Stretch="Fill" 
                            Opacity="0.2"
                            MouseLeftButtonDown="Inno_clikc"/>
-                  
+
                     <TextBlock x:Name="innov_txt" 
-                               Text="{Binding }"
+                               Text="{Binding Title}"
                                Foreground="AntiqueWhite"
-                               FontSize="14"
+                               FontSize="16" FontWeight="Bold"
                                Margin="10"
+                               Visibility="Collapsed" >
+                        
+                    </TextBlock>
+                    
+                    <TextBlock x:Name="innov_desc" 
+                               Text="{Binding Description}"
+                               Foreground="AntiqueWhite"
+                               FontSize="13"
+                               Margin="10"  VerticalAlignment="Center" 
                                Visibility="Collapsed" >
 
                     </TextBlock>
