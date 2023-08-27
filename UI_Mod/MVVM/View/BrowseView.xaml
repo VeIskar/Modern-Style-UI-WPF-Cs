@@ -85,7 +85,7 @@
                     CornerRadius="20" 
                     Margin="20,0,0,40">
 
-                <Grid>
+                <Grid x:Name="grid_Scien">
                     <Rectangle>
 
                         <Rectangle.Fill>
@@ -102,15 +102,33 @@
 
                     <Image Source="/Images/scien.png"
                            Stretch="Fill"
-                           Opacity="0.3"/>
+                           Opacity="0.3"
+                           MouseLeftButtonDown="Scien_click"/>
 
-                    <TextBlock Text="Science"
+                    <TextBlock x:Name="scien_txt" 
+                               Text="{Binding Title}"
+                               Foreground="AntiqueWhite"
+                               FontSize="16" FontWeight="Bold"
+                               Margin="10"
+                               Visibility="Collapsed">
+                    </TextBlock>
+
+                    <TextBlock x:Name="scien_desc" 
+                               Text="{Binding Description}"
+                               Foreground="AntiqueWhite"
+                               FontSize="13"
+                               Margin="10"  VerticalAlignment="Center" 
+                               Visibility="Collapsed">
+                    </TextBlock>
+
+                    <TextBlock Text="Science" x:Name="scien_title"
                                    Foreground="AntiqueWhite"
                                    FontSize="28"
                                    Margin="10,10,10,10"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Right"
-                                   VerticalAlignment="Bottom"/>
+                                   VerticalAlignment="Bottom"
+                                   Visibility="Visible"/>
 
                 </Grid>
 
@@ -130,7 +148,7 @@
                     CornerRadius="20" 
                     Margin="40,10,0,40"
                     >
-                <Grid>
+                <Grid x:Name="grid_Env">
                     <Rectangle>
                         <Rectangle.Fill>
 
@@ -147,15 +165,33 @@
 
                     <Image Source="/Images/natur.png"
                            Stretch="UniformToFill"
-                           Opacity="0.25"/>
+                           Opacity="0.25"
+                           MouseLeftButtonDown="Env_click"/>
 
-                    <TextBlock Text="Environment"
+                    <TextBlock x:Name="env_txt" 
+                               Text="{Binding Title}"
+                               Foreground="AntiqueWhite"
+                               FontSize="16" FontWeight="Bold"
+                               Margin="10"
+                               Visibility="Collapsed" >
+                    </TextBlock>
+
+                    <TextBlock x:Name="env_desc" 
+                               Text="{Binding Description}"
+                               Foreground="AntiqueWhite"
+                               FontSize="13"
+                               Margin="10"  VerticalAlignment="Center" 
+                               Visibility="Collapsed" >
+                    </TextBlock>
+
+                    <TextBlock    x:Name="env_title" Text="Environment"
                                    Foreground="AntiqueWhite"
                                    FontSize="28"
                                    Margin="10,10,10,10"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Right"
-                                   VerticalAlignment="Bottom"/>
+                                   VerticalAlignment="Bottom"
+                                   Visibility="Visible"/>
 
                 </Grid>
 
@@ -171,7 +207,7 @@
                     CornerRadius="20" 
                     Margin="20,0,0,30">
 
-                <Grid>
+                <Grid x:Name="grid_Fina">
                     <Rectangle>
                         <Rectangle.Fill>
 
@@ -188,15 +224,33 @@
 
                     <Image Source="/Images/fina.png"
                            Stretch="UniformToFill"
-                           Opacity="0.25"/>
+                           Opacity="0.25"
+                           MouseLeftButtonDown="Fina_click"/>
+                    
+                    <TextBlock x:Name="fina_txt" 
+                               Text="{Binding Title}"
+                               Foreground="AntiqueWhite"
+                               FontSize="16" FontWeight="Bold"
+                               Margin="10"
+                               Visibility="Collapsed" >
+                    </TextBlock>
 
-                    <TextBlock Text="Finance"
+                    <TextBlock x:Name="fina_desc" 
+                               Text="{Binding Description}"
+                               Foreground="AntiqueWhite"
+                               FontSize="13"
+                               Margin="10"  VerticalAlignment="Center" 
+                               Visibility="Collapsed" >
+                    </TextBlock>
+
+                    <TextBlock     x:Name="fina_title" Text="Finance"
                                    Foreground="AntiqueWhite"
                                    FontSize="28"
                                    Margin="10,10,10,10"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Right"
-                                   VerticalAlignment="Bottom"/>
+                                   VerticalAlignment="Bottom"
+                                   Visibility="Visible"/>
 
                 </Grid>
 

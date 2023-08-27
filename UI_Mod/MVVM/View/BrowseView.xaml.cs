@@ -34,16 +34,24 @@ namespace UI_Mod.MVVM.View
                    "\rlandscape exploring its organizations and peoples.\n" +               
                    "\nDiscover the strategies, mindsets, and stories " +
                    "\rbehind groundbreaking advancements."},
-                new Art_texts {Title="Mysteries Unveiled:Journey into Science", Description="From how our brain works to the newest discoveries about the universe and cosmos, the world of science captivates mankinds imagination and expands our understanding." +
-                   "\r\nIn this article we will explore the latest scientific breakthroughs and show the inner details of research work done by scientists." +
-                   "\r\nRead this article to find out about revolutionary technologies, and awe-inspiring revelations that propel humanity's quest for knowledge." },
-                new Art_texts {Title="Earth alarm: Navigating Environmental Landscape",Description="Our planet ecosystems is at a critical juncture, prompting an urgent call for collective action." +
-                    "\r\nIn this article, we delve into the pressing environmental challenges that span continents and impact every living being." +
-                    "\r\nAmidst the challenges we will meet communities, innovators, and policymakers who address issues such as climate change, conservation, and sustainable living." +
-                    "\r\nJoin us as we shed light on both the dire realities and the inspiring initiatives that are shaping the future of our environment."},
-                new Art_texts {Title="Trends Of Prosperity: Insights in the Financial World", Description="The world of finance is non stop evolving and changing influenced by global markets, technological advancements, and shifting consumer behaviors." +
-                    "\r\nThis article provides a comprehensive analysis of the financial landscape, offering insights into investment strategies, economic trends, and the transformative potential of financial technologies." +
-                    "\r\nWhether you're an investor, entrepreneur, or simply intrigued by the forces shaping economies, this exploration will provide a deeper understanding of the complex web that drives global prosperity." }
+                new Art_texts {Title="Unveiling: Science's Journey", Description="From how our brain works to the newest" +
+                   "\rdiscoveries about the universe and cosmos, the" +
+                   "\rworld of science still fascinates and amazes." +
+                   "\r\nIn this article we will explore the latest scientific" +
+                   "\rbreakthroughs and details of scientists research.\n" +
+                   "\nRead more to find out about revolutionary tech."},
+                new Art_texts {Title="Earth alarm: Our Environment",Description="Our planet ecosystems is at a critical juncture, " +
+                    "\rprompting an urgent call for collective action." +
+                    "\r\nIn this article, we delve into the pressing environ." +
+                    "\rchallenges that span continents and impact lives.\n" +               
+                    "\nJoin us as we shed light on both the dire realities" +
+                    "\rand the initiatives that shape our future."},
+                new Art_texts {Title="Trends Of Prosperity: Financial World", Description="The world of finance is non stop evolving and" +
+                    "\rchanging influenced by global markets, tech. advancements, consumers." +
+                    "\r\nThis article provides a comprehensive analysis of the financial landscape," +
+                    "\roffering insights into its many fields\n" +                    
+                    "\nExploration done in article provides a deeper understanding" +
+                    "\rof the complex web that drives global prosperity." }
                                
             };
             //can as well create new objects corresponding to the Art_texts class and put them in ObservableCollection
@@ -70,7 +78,56 @@ namespace UI_Mod.MVVM.View
             }          
 
         }
+        private void Scien_click(object sender, EventArgs e)
+        {
+            grid_Scien.DataContext = Art_texts_[1];
+            if (scien_txt.Visibility == Visibility.Collapsed && scien_desc.Visibility == Visibility.Collapsed)
+            {
+                scien_txt.Visibility = Visibility.Visible;
+                scien_desc.Visibility = Visibility.Visible;
+                scien_title.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                scien_txt.Visibility = Visibility.Collapsed;
+                scien_desc.Visibility = Visibility.Collapsed;
+                scien_title.Visibility = Visibility.Visible;
+            }
+        }
 
+        private void Env_click(object sender, MouseButtonEventArgs e)
+        {
+            grid_Env.DataContext = Art_texts_[2];
+            if (env_txt.Visibility == Visibility.Collapsed && env_desc.Visibility == Visibility.Collapsed)
+            {
+                env_txt.Visibility = Visibility.Visible;
+                env_desc.Visibility = Visibility.Visible;
+                env_title.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                env_txt.Visibility = Visibility.Collapsed;
+                env_desc.Visibility = Visibility.Collapsed;
+                env_title.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Fina_click(object sender, MouseButtonEventArgs e)
+        {
+            grid_Fina.DataContext= Art_texts_[3];
+            if (fina_txt.Visibility == Visibility.Collapsed && fina_desc.Visibility == Visibility.Collapsed)
+            {
+                fina_txt.Visibility = Visibility.Visible;
+                fina_desc.Visibility = Visibility.Visible;
+                fina_title.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                fina_txt.Visibility = Visibility.Collapsed;
+                fina_desc.Visibility = Visibility.Collapsed;
+                fina_title.Visibility = Visibility.Visible;
+            }
+        }
     }
 
     class Art_texts
