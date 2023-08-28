@@ -47,11 +47,11 @@ namespace UI_Mod.MVVM.View
                     "\nJoin us as we shed light on both the dire realities" +
                     "\rand the initiatives that shape our future."},
                 new Art_texts {Title="Trends Of Prosperity: Financial World", Description="The world of finance is non stop evolving and" +
-                    "\rchanging influenced by global markets, tech. advancements, consumers." +
-                    "\r\nThis article provides a comprehensive analysis of the financial landscape," +
-                    "\roffering insights into its many fields\n" +                    
-                    "\nExploration done in article provides a deeper understanding" +
-                    "\rof the complex web that drives global prosperity." }
+                    "\rchanging influenced by global markets, consumers." +
+                    "\r\nThis article provides a comprehensive analysis of " +
+                    "\rthe financial landscape, offering insights into it.\n" +                    
+                    "\nExploration done in article provides a deeper" +
+                    "\runderstanding of web that drives global prosperity." }
                                
             };
             //can as well create new objects corresponding to the Art_texts class and put them in ObservableCollection
