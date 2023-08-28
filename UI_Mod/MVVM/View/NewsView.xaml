@@ -53,27 +53,39 @@
                                 <RotateTransform Angle="180"/>
                             </Image.LayoutTransform>
                         </Image>
-                        
+
                     </Button.Content>
                 </Button>
 
                 <Canvas Grid.Column="1" Height="290" Width="570">
 
                     <Image x:Name="imgSlide" Height="290" Width="570" Stretch="Fill" Margin="5"/>
-                    
-                    <TextBlock x:Name="SlideDescription"
+
+                    <Border Background="#13292A"
+                                MaxHeight="65"
+                                MaxWidth="520"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                CornerRadius="10"
+                                Opacity="0.8" 
+                                Canvas.Bottom="10" Canvas.Right="5"
+                                >
+
+                        <TextBlock x:Name="SlideDescription"
                                VerticalAlignment="Bottom"
                                HorizontalAlignment="Right"
-                               Text=""
+                               Text="{Binding Current_desc}"
                                FontFamily="/Fonts/#Comme"
-                               Foreground="WhiteSmoke"
+                               Foreground="#ffffff"
                                FontSize="22"
                                FontWeight="Medium"
-                               Margin="7"
+                               Margin="9"
                                Canvas.Bottom="10"
                                Canvas.Right="5"
                                />
-                    
+
+                    </Border>
+
                 </Canvas>
 
                 <Button Grid.Column="2" Margin="5,5,5,5" 
@@ -87,12 +99,12 @@
                     </Button.Content>
                 </Button>
 
-                
+
 
 
             </Grid>
-            
-            
+
+
         </StackPanel>
 
         <StackPanel Height="78">
@@ -105,24 +117,24 @@
                    Margin="25,0,0,5"/>
 
             <ItemsControl ItemsSource="{Binding Tags}">
-                
+
                 <ItemsControl.ItemsPanel>
-                    
+
                     <ItemsPanelTemplate>
                         <StackPanel Orientation="Horizontal"/>
                     </ItemsPanelTemplate>
-                    
+
                 </ItemsControl.ItemsPanel>
-                
+
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border Width="Auto" Height="34"
                                 Background="Crimson"
                                 CornerRadius="10"
                                 Margin="5">
-                            
+
                             <Label>
-                                
+
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                                     <Image Source="/Images/close_.png" Height="16" Width="16"/>
                                     <AccessText Text="{Binding}"                                               
@@ -130,19 +142,19 @@
                                                 Foreground="White"
                                                 FontFamily="/Fonts/#Comme"
                                                 Margin="5">
-                                        
+
                                     </AccessText>
                                 </StackPanel>
                             </Label>
-                            
+
                         </Border>
-                        
+
                     </DataTemplate>
-                    
+
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
 
-            
+
 
             <!-- Old hardcoding of tags
             <Border Width="80" Height="34"
@@ -167,8 +179,8 @@
                 </Border>
                     ...
                 </Border>-->
-                
-            
+
+
         </StackPanel>
 
 

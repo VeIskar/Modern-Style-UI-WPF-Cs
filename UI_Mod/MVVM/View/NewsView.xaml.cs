@@ -26,6 +26,7 @@ namespace UI_Mod.MVVM.View
     {
         private int index = 0;
         SliderImage slideImgs = new SliderImage();
+        public string Current_desc { get { return slideDescriptions[index]; } }
 
         private List<string> slideDescriptions = new List<string>
         {
@@ -33,7 +34,7 @@ namespace UI_Mod.MVVM.View
             "Explore nature: the quietest place in Europe","Learn about the positive impact of group work"
 
         };
-
+        
         private DispatcherTimer timer;
 
         public NewsView()
@@ -62,7 +63,7 @@ namespace UI_Mod.MVVM.View
         {
             ClockTxt.Text=DateTime.Now.ToString("G");
         }
-
+       
         //descriptions under all of the images during slide show
         private void UpdateSlideDesc()
         {
