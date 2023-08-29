@@ -143,18 +143,6 @@
     <Resource Include="Images\Businessman1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\natur.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\fina.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\innov.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\scien.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\factory.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -166,9 +154,6 @@
     <Resource Include="Images\close_.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\forest.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\roomBus.png" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +161,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\cloudW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fina_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\scien_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\natur_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\inov_21.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

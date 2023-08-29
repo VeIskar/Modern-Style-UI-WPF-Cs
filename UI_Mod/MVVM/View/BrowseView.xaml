@@ -28,17 +28,17 @@
 
                             <LinearGradientBrush StartPoint="0,0" 
                                                  EndPoint="1,2">
-                                
-                                <GradientStop Color="Cyan" Offset="0.0"/>
-                                <GradientStop Color="DarkBlue" Offset="0.5"/>
+
+                                <GradientStop Color="#004057" Offset="0.0"/>
+                                <GradientStop Color="#006ED1" Offset="0.5"/>
 
                             </LinearGradientBrush>
 
                         </Rectangle.Fill>
                     </Rectangle>
                    
-                    <Image Source="/Images/innov.png" 
-                           Stretch="Fill" 
+                    <Image Source="/Images/inov_21.png" 
+                           Stretch="UniformToFill" 
                            Opacity="0.2"
                            MouseLeftButtonDown="Inno_clikc"/>
 
@@ -91,17 +91,17 @@
                         <Rectangle.Fill>
                             <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,1">
-                                <GradientStop Color="Crimson" Offset="0.0"/>
-                                <GradientStop Color="DarkOrange" Offset="0.5"/>
-                                <GradientStop Color="#fab52a" Offset="1"/>
+                                <GradientStop Color="#DDA01E" Offset="0.0"/>
+                                <GradientStop Color="#FFA753" Offset="0.5"/>
+                                <GradientStop Color="#FFB184" Offset="1"/>
 
                             </LinearGradientBrush>
 
                         </Rectangle.Fill>
                     </Rectangle>
 
-                    <Image Source="/Images/scien.png"
-                           Stretch="Fill"
+                    <Image Source="/Images/scien_2.png"
+                           Stretch="UniformToFill"
                            Opacity="0.3"
                            MouseLeftButtonDown="Scien_click"/>
 
@@ -154,16 +154,16 @@
 
                             <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,1">
-                                <GradientStop Color="DarkGreen" Offset="0.0"/>
-                                <GradientStop Color="#03a106" Offset="0.5"/>
-                                <GradientStop Color="Lime" Offset="1"/>
+                                <GradientStop Color="#007D53" Offset="0.0"/>
+                                <GradientStop Color="#394B41" Offset="0.5"/>
+                                <GradientStop Color="#728767" Offset="1"/>
 
                             </LinearGradientBrush>
 
                         </Rectangle.Fill>
                     </Rectangle>
 
-                    <Image Source="/Images/natur.png"
+                    <Image Source="/Images/natur_2.png"
                            Stretch="UniformToFill"
                            Opacity="0.25"
                            MouseLeftButtonDown="Env_click"/>
@@ -213,16 +213,16 @@
 
                             <LinearGradientBrush StartPoint="0,0"
                                          EndPoint="1,1">
-                                <GradientStop Color="#241545" Offset="0.0"/>
-                                <GradientStop Color="#3d139c" Offset="0.5"/>
-                                <GradientStop Color="Fuchsia" Offset="1"/>
+                                <GradientStop Color="#57506E" Offset="0.0"/>
+                                <GradientStop Color="#926287" Offset="0.5"/>
+                                <GradientStop Color="#CF7589" Offset="1"/>
 
                             </LinearGradientBrush>
 
                         </Rectangle.Fill>
                     </Rectangle>
 
-                    <Image Source="/Images/fina.png"
+                    <Image Source="/Images/fina_2.png"
                            Stretch="UniformToFill"
                            Opacity="0.25"
                            MouseLeftButtonDown="Fina_click"/>
