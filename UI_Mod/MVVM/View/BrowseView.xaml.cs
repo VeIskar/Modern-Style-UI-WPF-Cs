@@ -28,30 +28,24 @@ namespace UI_Mod.MVVM.View
            
             Art_texts_ = new ObservableCollection<Art_texts>
             {
-                new Art_texts {Title="Power of Creativity: Path to Innovation", Description="In our current rapidly evolving world, innovation " +
-                 "\rhas emerged as the driving force of progress." +
-                   "\r\nIn this article we will delve into innovation" +
-                   "\rlandscape exploring its organizations and peoples.\n" +               
-                   "\nDiscover the strategies, mindsets, and stories " +
-                   "\rbehind groundbreaking advancements."},
-                new Art_texts {Title="Unveiling: Science's Journey", Description="From how our brain works to the newest" +
-                   "\rdiscoveries about the universe and cosmos, the" +
-                   "\rworld of science still fascinates and amazes." +
-                   "\r\nIn this article we will explore the latest scientific" +
-                   "\rbreakthroughs and details of scientists research.\n" +
+                new Art_texts {Title="Creativity: Path to Innovation", Description="In a rapidly evolving world, innovation is the key." +                   
+                   "\r\nExplore the innovation landscape, strategies," +
+                   "\rmindsets and stories behind advancements.\n" +
+                   "\nDiscover the Cutting Edge "},
+                new Art_texts {Title="Unveiling: Science's Journey", Description="From the brain to cosmos, science is fascinating. " +
+                   "\r\nExplore the latest breakthroughs, scientists'" +
+                   "\rresearch, and revolutionary tech in this article.\n" +
                    "\nRead more to find out about revolutionary tech."},
-                new Art_texts {Title="Earth alarm: Our Environment",Description="Our planet ecosystems is at a critical juncture, " +
-                    "\rprompting an urgent call for collective action." +
-                    "\r\nIn this article, we delve into the pressing environ." +
-                    "\rchallenges that span continents and impact lives.\n" +               
-                    "\nJoin us as we shed light on both the dire realities" +
-                    "\rand the initiatives that shape our future."},
-                new Art_texts {Title="Trends Of Prosperity: Financial World", Description="The world of finance is non stop evolving and" +
-                    "\rchanging influenced by global markets, consumers." +
-                    "\r\nThis article provides a comprehensive analysis of " +
-                    "\rthe financial landscape, offering insights into it.\n" +                    
-                    "\nExploration done in article provides a deeper" +
-                    "\runderstanding of web that drives global prosperity." }
+                new Art_texts {Title="Earth alarm: Our Environment",Description="Our planet's ecosystems face a critical juncture," +
+                    "\rdemanding urgent collective action." +
+                    "\r\nDelve into pressing environmental challenges" +
+                    "\rand illuminating initiatives in this article.\n" + //usunąć ?              
+                    "\nJoin us as in this ecological journey." },
+                new Art_texts {Title="Prosperity Trends: Financial World", Description="The financial world is ever-evolving," +
+                    "\rshaped by global markets and consumers." +
+                    "\r\nThis article comprehensively analyzes the" +
+                    "\rfinancial landscape, offering insights into it.\n" +
+                    "\nExplore web that drives global prosperity with us" }
                                
             };
             //can as well create new objects corresponding to the Art_texts class and put them in ObservableCollection

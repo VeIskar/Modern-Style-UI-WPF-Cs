@@ -41,24 +41,45 @@
                            Stretch="UniformToFill" 
                            Opacity="0.2"
                            MouseLeftButtonDown="Inno_clikc"/>
+                   
+                    
 
-                    <TextBlock x:Name="innov_txt" 
+                    <Border Background="#474554"
+                            MaxHeight="170" MaxWidth="315"
+                            HorizontalAlignment="Left"
+                            CornerRadius="10"
+                            Opacity="0.85"
+                            Margin="10,0,0,-30">
+                        <Grid>
+
+                            
+
+                            <TextBlock x:Name="innov_txt" 
                                Text="{Binding Title}"
                                Foreground="AntiqueWhite"
-                               FontSize="16" FontWeight="Bold"
+                               FontSize="18" FontWeight="Bold"
                                Margin="10"
                                Visibility="Collapsed" >
-                        
-                    </TextBlock>
-                    
-                    <TextBlock x:Name="innov_desc" 
+
+                            </TextBlock>
+
+                            <TextBlock x:Name="innov_desc" 
                                Text="{Binding Description}"
                                Foreground="AntiqueWhite"
-                               FontSize="13"
-                               Margin="10"  VerticalAlignment="Center" 
-                               Visibility="Collapsed" >
+                               FontSize="13" FontWeight="Medium"
+                               Margin="10,0,0,-10"  VerticalAlignment="Center" 
+                               Visibility="Collapsed" />
+                            
 
-                    </TextBlock>
+                        </Grid>
+
+                        
+
+
+
+                    </Border>
+
+                    
 
                     <TextBlock     x:Name="innov_title"
                                    Text="Innovation"
@@ -108,7 +129,7 @@
                     <TextBlock x:Name="scien_txt" 
                                Text="{Binding Title}"
                                Foreground="AntiqueWhite"
-                               FontSize="16" FontWeight="Bold"
+                               FontSize="18" FontWeight="Bold"
                                Margin="10"
                                Visibility="Collapsed">
                     </TextBlock>
@@ -116,7 +137,7 @@
                     <TextBlock x:Name="scien_desc" 
                                Text="{Binding Description}"
                                Foreground="AntiqueWhite"
-                               FontSize="13"
+                               FontSize="13" FontWeight="Medium"
                                Margin="10"  VerticalAlignment="Center" 
                                Visibility="Collapsed">
                     </TextBlock>
@@ -171,7 +192,7 @@
                     <TextBlock x:Name="env_txt" 
                                Text="{Binding Title}"
                                Foreground="AntiqueWhite"
-                               FontSize="16" FontWeight="Bold"
+                               FontSize="18" FontWeight="Bold"
                                Margin="10"
                                Visibility="Collapsed" >
                     </TextBlock>
@@ -179,7 +200,7 @@
                     <TextBlock x:Name="env_desc" 
                                Text="{Binding Description}"
                                Foreground="AntiqueWhite"
-                               FontSize="13"
+                               FontSize="13" FontWeight="Medium"
                                Margin="10"  VerticalAlignment="Center" 
                                Visibility="Collapsed" >
                     </TextBlock>
@@ -230,7 +251,7 @@
                     <TextBlock x:Name="fina_txt" 
                                Text="{Binding Title}"
                                Foreground="AntiqueWhite"
-                               FontSize="16" FontWeight="Bold"
+                               FontSize="18" FontWeight="Bold"
                                Margin="10"
                                Visibility="Collapsed" >
                     </TextBlock>
@@ -238,7 +259,7 @@
                     <TextBlock x:Name="fina_desc" 
                                Text="{Binding Description}"
                                Foreground="AntiqueWhite"
-                               FontSize="13"
+                               FontSize="13" FontWeight="Medium"
                                Margin="10"  VerticalAlignment="Center" 
                                Visibility="Collapsed" >
                     </TextBlock>
