@@ -35,17 +35,15 @@ namespace UI_Mod.MVVM.View
                 new Art_texts {Title="Unveiling: Science's Journey", Description="From the brain to cosmos, science is fascinating. " +
                    "\r\nExplore the latest breakthroughs, scientists'" +
                    "\rresearch, and revolutionary tech in this article.\n" +
-                   "\nRead more to find out about revolutionary tech."},
-                new Art_texts {Title="Earth alarm: Our Environment",Description="Our planet's ecosystems face a critical juncture," +
-                    "\rdemanding urgent collective action." +
+                   "\nRead more to find out about revolutionary tech"},
+                new Art_texts {Title="Earth alarm: Our Environment",Description="Our planet's ecosystems demands urgent action." +                   
                     "\r\nDelve into pressing environmental challenges" +
-                    "\rand illuminating initiatives in this article.\n" + //usunąć ?              
-                    "\nJoin us as in this ecological journey." },
-                new Art_texts {Title="Prosperity Trends: Financial World", Description="The financial world is ever-evolving," +
-                    "\rshaped by global markets and consumers." +
+                    "\rand illuminating initiatives in this article.\n" +              
+                    "\nJoin us as in this ecological journey" },
+                new Art_texts {Title="Prosperity Trends: Finance", Description="Finance evolves, shaped by markets and public." +
                     "\r\nThis article comprehensively analyzes the" +
                     "\rfinancial landscape, offering insights into it.\n" +
-                    "\nExplore web that drives global prosperity with us" }
+                    "\nExplore web that drives global prosperity" }
                                
             };
             //can as well create new objects corresponding to the Art_texts class and put them in ObservableCollection

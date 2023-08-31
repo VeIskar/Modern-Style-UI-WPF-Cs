@@ -129,7 +129,7 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border Width="Auto" Height="34"
-                                Background="Crimson"
+                                Background="#952323"
                                 CornerRadius="10"
                                 Margin="5">
 
