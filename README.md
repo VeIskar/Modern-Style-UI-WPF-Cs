@@ -43,26 +43,29 @@ To run the project, follow these steps:
 
 *Main Overview view*
 
-![scr_1](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/4edcaac3-a8ca-4516-8aa7-ed0128c77541)
+![scr_1](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/90c5a4d1-b796-4cd2-b984-fef9a5895f52)
+
 
 
 *Browse view*
 
-![scr_2](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/801663df-3bdc-439c-be7d-e8c182dd0ffa)
+![scr_2](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/b002fb57-a5bd-400c-a764-22f932201cd7)
+
 
 
 *Browse view with all the displayed text of articles*
 
-![scr_3](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/4524b331-fa58-4a78-99e7-ccdd38b8f3a1)
+![scr_3](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/ec77b021-4663-40ea-a5c2-8f510f147f59)
 
 
 *News view with one of it 'news article'*
 
-![scr_4](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/d8c9f6dd-9fa3-41f6-b949-6b7ea5295f83)
+![scr_4](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/15937f1a-b6d6-4f1b-8311-8493705b7bb4)
+
 
 *News view with different 'news article'*
 
-![scr_5](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/6a367ee6-f725-4faa-bba3-73c4db192fdd)
+![scr_5](https://github.com/VeIskar/Modern-Style-UI-WPF-Cs/assets/110427103/84975f35-a8a2-48a3-b365-087d94b680f2)
 
 
 This README file will be updated in case of any new features.
